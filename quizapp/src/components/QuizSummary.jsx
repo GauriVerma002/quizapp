@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const QuizSummary = ({ totalPoints }) => (
   <div className="quiz-summary">
     <h1>Quiz Completed!</h1>

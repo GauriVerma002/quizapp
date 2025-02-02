@@ -39,6 +39,7 @@ const App = () => {
       questionData={quizData[currentQuestionIndex]}
       onNext={handleNextQuestion}
     />
+    
   );
 };
 
