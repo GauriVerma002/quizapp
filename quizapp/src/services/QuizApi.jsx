@@ -9,8 +9,6 @@ export const fetchQuizData = async () => {
         'Content-Type': 'application/json',
       },
     });
-    // console.log(response.data);  //
-    // console.log("API Response:", response);
 
     return response.data;
   } catch (error) {

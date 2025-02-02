@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchQuizData } from "../services/QuizApi";
 import Card from "./Card";
 import ScoreCard from "./ScoreCard";
+import './Card.css'
 
 const QuizQuestion = () => {
   const [quiz, setQuiz] = useState(null);
@@ -41,20 +42,20 @@ const QuizQuestion = () => {
   };
 
   return (
-    <div className="post">
+    <div className="quiz-card">
       {quiz ? (
         quizCompleted ? (
           <ScoreCard score={score} />
         ) : (
           <>
             <Card data={quiz} />
-            <h2>{quiz.title || "Quiz Title"}</h2>
-            <p>Topic: {quiz.topic || "No topic provided"}</p>
+            <h2 className="quiz-card h2">{quiz.title || "Quiz Title"}</h2>
+            <p className="quiz-card p">Topic: {quiz.topic || "No topic provided"}</p>
             {quiz.questions?.length > 0 && (
               <div>
                 <p>{quiz.questions[currentQuestionIndex].description || `Question ${currentQuestionIndex + 1}`}</p>
                 {quiz.questions[currentQuestionIndex].options?.map((option) => (
-                  <button
+                  <button className="option-button"
                     key={option.id}
                     onClick={() => handleOptionClick(option)}
                     disabled={selectedOptions[currentQuestionIndex] !== undefined}

@@ -1,0 +1,81 @@
+.quiz-card {
+    background-color: #c5bfbf;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: #5C1147;
+  }
+  
+  .quiz-card h2,h1 {
+    font-size: 1.5rem;
+    color: #fffdfd;
+  }
+  
+  .quiz-card p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  .quiz-card button{
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .quiz-card button:hover{
+    background-color: #28a745;
+  }
+  
+  .option-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .option-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .option-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .navigation-buttons button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .navigation-buttons button:hover {
+    background-color: #218838;
+  }
+  
+  .navigation-buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
