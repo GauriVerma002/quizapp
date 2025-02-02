@@ -18,7 +18,7 @@ const QuizQuestion = () => {
   }, []);
 
   const handleOptionClick = (option) => {
-    const isCorrect = option.isCorrect;
+    const isCorrect = option.is_correct;
     if (selectedOptions[currentQuestionIndex] === undefined) {
       setSelectedOptions({ ...selectedOptions, [currentQuestionIndex]: option.id });
       setScore((prevScore) => prevScore + (isCorrect ? 4 : -1));
